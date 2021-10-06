@@ -6,7 +6,7 @@ public class HelloWorld {
         String hello = "";
 
         // Enter code here
-
+        hello = "Hello, World";
         return hello;
     }
 
