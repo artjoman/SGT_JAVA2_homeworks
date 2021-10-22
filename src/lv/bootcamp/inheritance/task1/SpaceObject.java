@@ -7,8 +7,8 @@ public class SpaceObject {
     private int width;
     private int height;
     private String colour;
-    private double coordinateX;
-    private double coordinateY;
+    private static double coordinateX;
+    private static double coordinateY;
 
     public SpaceObject() {
     }
@@ -63,7 +63,7 @@ public class SpaceObject {
         this.colour = colour;
     }
 
-    public double getCoordinateX() {
+    public static double getCoordinateX() {
         return coordinateX;
     }
 
@@ -71,7 +71,7 @@ public class SpaceObject {
         this.coordinateX = coordinateX;
     }
 
-    public double getCoordinateY() {
+    public static double getCoordinateY() {
         return coordinateY;
     }
 
