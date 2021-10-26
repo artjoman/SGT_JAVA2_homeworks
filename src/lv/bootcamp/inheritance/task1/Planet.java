@@ -16,6 +16,9 @@ public class Planet extends SpaceObject {
         this.velocityY = velocityY;
     }
 
+    //Methods
+
+
     //Getters and Setters
     public double getMass() {
         return mass;
