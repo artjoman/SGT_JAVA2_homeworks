@@ -39,6 +39,30 @@ public class Planet extends SpaceObject {
         return distanceBetweenPlanets;
     }
 
+    /**
+     * Method - calcForce(otherPlanet).
+     * F = G * m1 * m2 / (r*r)
+     * In this method is used Constant G = (6.67 * 10-11 N-m2 / kg2).
+     * Method returns a double describing the force exerted on the planet by the another planet.
+     * @return
+     */
+    public double calcForce(Planet planet) {
+        double CONSTANT_G = 6.67 * Math.pow(10, -11);
+
+        double m1 = getMass();
+        double m2 = planet.getMass();
+
+            //double r = calcDistance(planet); - method should be called!!!!!
+        double x1 = getCoordinateX();
+        double y1 = getCoordinateY();
+        double x2 = planet.getCoordinateX();
+        double y2 = planet.getCoordinateY();
+        double r = Math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+        double forceResult = (CONSTANT_G * m1 * m2)/(r*r);
+        System.out.println("Force result is: " + forceResult);
+        return forceResult;
+    }
+
 
     //Getters and Setters
     public double getMass() {
