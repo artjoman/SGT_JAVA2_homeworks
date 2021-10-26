@@ -1,5 +1,7 @@
 package lv.bootcamp.inheritance.task1;
 
+import java.awt.*;
+
 public class Planet extends SpaceObject {
 
     private double mass;
@@ -52,17 +54,17 @@ public class Planet extends SpaceObject {
         double m1 = getMass();
         double m2 = planet.getMass();
 
-            //double r = calcDistance(planet); - method should be called!!!!!
-        double x1 = getCoordinateX();
-        double y1 = getCoordinateY();
-        double x2 = planet.getCoordinateX();
-        double y2 = planet.getCoordinateY();
-        double r = Math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+        double r = calcDistance(planet);
+            /**double x1 = getCoordinateX();
+            double y1 = getCoordinateY();
+            double x2 = planet.getCoordinateX();
+            double y2 = planet.getCoordinateY();
+            double r = Math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+             */
         double forceResult = (CONSTANT_G * m1 * m2)/(r*r);
         System.out.println("Force result is: " + forceResult);
         return forceResult;
     }
-
 
     //Getters and Setters
     public double getMass() {
