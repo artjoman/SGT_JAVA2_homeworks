@@ -1,4 +1,91 @@
 package lv.bootcamp.inheritance.task1;
 
 public class SpaceObject {
+
+    private String name;
+    private String type;
+    private double width;
+    private double height;
+    private String color;
+    private double coordinateX;
+    private double coordinateY;
+
+    public void calcDistance(otherPlanet){
+        System.out.println("The distance between two planets is: " );
+
+    }
+
+    public void calcForce(otherPlanet) {
+
+    }
+
+    //Constructors
+    public SpaceObject() {
+    }
+
+    public SpaceObject(java.lang.String name, java.lang.String type, double width, double height, java.lang.String color, double coordinateX, double coordinateY) {
+        this.name = name;
+        this.type = type;
+        this.width = width;
+        this.height = height;
+        this.color = color;
+        this.coordinateX = coordinateX;
+        this.coordinateY = coordinateY;
+    }
+
+    public java.lang.String getName() {
+        return name;
+    }
+
+    public void setName(java.lang.String name) {
+        this.name = name;
+    }
+
+    public java.lang.String getType() {
+        return type;
+    }
+
+    public void setType(java.lang.String type) {
+        this.type = type;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public java.lang.String getColor() {
+        return color;
+    }
+
+    public void setColor(java.lang.String color) {
+        this.color = color;
+    }
+
+    public double getCoordinateX() {
+        return coordinateX;
+    }
+
+    public void setCoordinateX(double coordinateX) {
+        this.coordinateX = coordinateX;
+    }
+
+    public double getCoordinateY() {
+        return coordinateY;
+    }
+
+    public void setCoordinateY(double coordinateY) {
+        this.coordinateY = coordinateY;
+    }
 }
