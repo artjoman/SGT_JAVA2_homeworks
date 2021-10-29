@@ -7,8 +7,6 @@ public class Planet extends SpaceObject {
     private double velocityY;
 
     //Constructors
-
-
     public Planet() {
     }
 
