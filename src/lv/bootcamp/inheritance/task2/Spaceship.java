@@ -1,8 +1,9 @@
 package lv.bootcamp.inheritance.task2;
 
+import lv.bootcamp.inheritance.task1.SpaceObject;
 import lv.bootcamp.inheritance.task1.SpaceObject.*;
 
-public class Spaceship {
+public class Spaceship extends SpaceObject {
 
     private double mass;
     private double velocityX;
@@ -11,6 +12,20 @@ public class Spaceship {
     private double acceleration;
     private String fuel;
     private double fuelConsumption;
+
+    //Constructors
+    public Spaceship() {
+    }
+
+    public Spaceship(double mass, double velocityX, double velocityY, double direction, double acceleration, String fuel, double fuelConsumption) {
+        this.mass = mass;
+        this.velocityX = velocityX;
+        this.velocityY = velocityY;
+        this.direction = direction;
+        this.acceleration = acceleration;
+        this.fuel = fuel;
+        this.fuelConsumption = fuelConsumption;
+    }
 
     //Getters and Setters
     public double getMass() {
