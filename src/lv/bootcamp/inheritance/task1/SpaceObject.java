@@ -10,20 +10,12 @@ public class SpaceObject {
     private double coordinateX;
     private double coordinateY;
 
-    public void calcDistance(otherPlanet){
-        System.out.println("The distance between two planets is: " );
 
-    }
-
-    public void calcForce(otherPlanet) {
-
-    }
-
-    //Constructors
+    //Constructors and getters/setters
     public SpaceObject() {
     }
 
-    public SpaceObject(java.lang.String name, java.lang.String type, double width, double height, java.lang.String color, double coordinateX, double coordinateY) {
+    public SpaceObject(String name, String type, double width, double height, String color, double coordinateX, double coordinateY) {
         this.name = name;
         this.type = type;
         this.width = width;
