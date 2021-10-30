@@ -32,12 +32,20 @@ public class Spaceship extends SpaceObject {
         // rotate the ship by x degrees
         // ( remember direction cannot be less than 0 and larger than 360. Calculate the remaining modulus )
 
-
-        // Second method - accelerate(acc)
-        // move the ship towards the rotation direction by distance acc.
-        // This should update coordinateX and coordinateY values.
-        //DeltaX = cos(α) * acc
-        //DeltaY = sin(α) * acc
+    /**
+     * Method - accelerate(acc).
+     * This method moves the ship towards the rotation direction by distance acc.
+     * Used formulas: DeltaX = cos(α) * acc /// DeltaY = sin(α) * acc
+     * @param acc
+     * @return
+     */
+    public double[] accelerate(double acc) {
+        double DeltaX, DeltaY;
+        double a = 0;
+        DeltaX = Math.cos(a) * acc;
+        DeltaY = Math.sin(a) * acc;
+        return new double[] {DeltaX, DeltaY};
+    }
 
 
 
