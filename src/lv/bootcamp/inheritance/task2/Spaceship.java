@@ -1,7 +1,6 @@
 package lv.bootcamp.inheritance.task2;
 
 import lv.bootcamp.inheritance.task1.SpaceObject;
-import lv.bootcamp.inheritance.task1.SpaceObject.*;
 
 public class Spaceship extends SpaceObject {
 
@@ -17,7 +16,8 @@ public class Spaceship extends SpaceObject {
     public Spaceship() {
     }
 
-    public Spaceship(double mass, double velocityX, double velocityY, double direction, double acceleration, String fuel, double fuelConsumption) {
+    public Spaceship(String name, String type, double width, double height, String color, double coordinateX, double coordinateY, double mass, double velocityX, double velocityY, double direction, double acceleration, String fuel, double fuelConsumption) {
+        super(name, type, width, height, color, coordinateX, coordinateY);
         this.mass = mass;
         this.velocityX = velocityX;
         this.velocityY = velocityY;
@@ -26,11 +26,25 @@ public class Spaceship extends SpaceObject {
         this.fuel = fuel;
         this.fuelConsumption = fuelConsumption;
     }
+//Methods
 
-    //Methods
-        // First method - rotate(degrees)
-        // rotate the ship by x degrees
-        // ( remember direction cannot be less than 0 and larger than 360. Calculate the remaining modulus )
+    /**
+     *Method - rotate(degrees).
+     * This method rotates the ship by x degrees.
+     * @param degrees
+     */
+    public void rotate(double degrees) {
+        double rotatedX, rotatedY;
+//        if (degrees > 360) {
+//            degrees = degrees - 360;
+//        } else if (degrees < 0) {
+//            System.out.println("Error. Degrees can not be smaller than 0");
+//        }
+
+        rotatedX = this.getCoordinateX() * Math.cos(degrees) + this.getCoordinateY() * Math.sin(degrees);
+        rotatedY = this.getCoordinateX() * Math.sin(degrees) + this.getCoordinateY() * Math.cos(degrees);
+        System.out.println(rotatedX + " " + rotatedY);
+    }
 
     /**
      * Method - accelerate(acc).
@@ -39,16 +53,13 @@ public class Spaceship extends SpaceObject {
      * @param acc
      * @return
      */
-    public double[] accelerate(double acc) {
+    public void accelerate(double acc) {
         double DeltaX, DeltaY;
-        double a = 0;
-        DeltaX = Math.cos(a) * acc;
-        DeltaY = Math.sin(a) * acc;
-        return new double[] {DeltaX, DeltaY};
+        double a = 90;
+        DeltaX = this.getCoordinateX() + (Math.cos(a) * acc);
+        DeltaY = this.getCoordinateX() + (Math.sin(a) * acc);
+        System.out.println(DeltaX + " " + DeltaY);
     }
-
-
-
 
     //Getters and Setters
     public double getMass() {
