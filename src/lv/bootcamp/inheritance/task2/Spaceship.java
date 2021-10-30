@@ -27,6 +27,21 @@ public class Spaceship extends SpaceObject {
         this.fuelConsumption = fuelConsumption;
     }
 
+    //Methods
+        // First method - rotate(degrees)
+        // rotate the ship by x degrees
+        // ( remember direction cannot be less than 0 and larger than 360. Calculate the remaining modulus )
+
+
+        // Second method - accelerate(acc)
+        // move the ship towards the rotation direction by distance acc.
+        // This should update coordinateX and coordinateY values.
+        //DeltaX = cos(α) * acc
+        //DeltaY = sin(α) * acc
+
+
+
+
     //Getters and Setters
     public double getMass() {
         return mass;
