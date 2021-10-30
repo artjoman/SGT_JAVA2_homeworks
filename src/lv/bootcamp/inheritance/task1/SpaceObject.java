@@ -7,8 +7,8 @@ public class SpaceObject {
     private double width;
     private double height;
     private  String color;
-    private double coordinateX;
-    private double coordinateY;
+    public double coordinateX;
+    public double coordinateY;
 
     public SpaceObject() {
     }
