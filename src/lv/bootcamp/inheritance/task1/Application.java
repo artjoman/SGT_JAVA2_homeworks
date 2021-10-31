@@ -2,6 +2,9 @@ package lv.bootcamp.inheritance.task1;
 
 import lv.bootcamp.inheritance.task2.Spaceship;
 
+/**
+ * The class is created to check if the code is working correctly
+ */
 public class Application {
     public static void main(String[] args) {
         Planet otherPlanet = new Planet(3, 5, 100);
