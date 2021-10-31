@@ -1,4 +1,101 @@
 package lv.bootcamp.inheritance.task1;
 
 public class SpaceObject {
+
+    public String name;
+    public String type;
+    public double width;
+    public double height;
+    public String color;
+    public double coordinateX;
+    public double coordinateY;
+
+    public SpaceObject() {
+    }
+
+    public SpaceObject(double coordinateX, double coordinateY) {
+        this.coordinateX = coordinateX;
+        this.coordinateY = coordinateY;
+    }
+
+    public SpaceObject(String name, String type, double width, double height, String color, double coordinateX, double coordinateY) {
+        this.name = name;
+        this.type = type;
+        this.width = width;
+        this.height = height;
+        this.color = color;
+        this.coordinateX = coordinateX;
+        this.coordinateY = coordinateY;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getCoordinateX() {
+        return coordinateX;
+    }
+
+    public void setCoordinateX(double coordinateX) {
+        this.coordinateX = coordinateX;
+    }
+
+    public double getCoordinateY() {
+        return coordinateY;
+    }
+
+    public void setCoordinateY(double coordinateY) {
+        this.coordinateY = coordinateY;
+    }
+
+    /**
+     * Shows properties for a space object
+     * @return - properties for a space object
+     */
+    public String objectProperties() {
+        return " properties: " + '\n' +
+                "name=" + name + '\t' +
+                "type=" + type + '\t' +
+                "width=" + width + '\t' +
+                "height=" + height + '\t' +
+                "color=" + color + '\t' +
+                "coordinateX=" + coordinateX + '\t' +
+                "coordinateY=" + coordinateY;
+    }
 }
