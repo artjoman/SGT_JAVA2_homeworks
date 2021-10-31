@@ -120,4 +120,28 @@ public class Spaceship extends SpaceObject {
                 "fuel=" + fuel + '\t' +
                 "fuelConsumption=" + fuelConsumption;
     }
+
+    /**
+     * Rotates the ship by value of specific degrees
+     * @param degrees - int value between 0 and 360 degrees
+     */
+    public void rotate(int degrees){
+        setDirection(degrees);
+    }
+
+    /**
+     * Moves the ship towards new point in accordance with given angle of rotation and distance
+     * @param acc - int value of distance between start and end points
+     */
+    public void accelerate(int acc){
+        setAcceleration(acc);
+        double startCoordinateX = this.getCoordinateX();
+        double startCoordinateY = this.getCoordinateY();
+
+        double deltaX = Math.cos(this.getDirection()) * acc;
+        double deltaY = Math.sin(this.getDirection()) * acc;
+
+        setCoordinateX(startCoordinateX + deltaX);
+        setCoordinateY(startCoordinateY + deltaY);
+    }
 }

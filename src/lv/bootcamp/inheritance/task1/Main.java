@@ -1,5 +1,7 @@
 package lv.bootcamp.inheritance.task1;
 
+import lv.bootcamp.inheritance.task2.Spaceship;
+
 public class Main {
     public static void main(String[] args) {
         SpaceObject object1 = new SpaceObject();
@@ -17,6 +19,13 @@ public class Main {
         System.out.println("Distance between Planet2 and Planet3: " + planet2.calcDistance(planet3));
 
         System.out.println("Distance between Planet2 and Planet3: " + planet2.calcForce(planet3));
+
+        Spaceship spaceship = new Spaceship("Spaceship", "spaceship", 20, 80, "green", 0, 0, 100, 5, 5, 0, 0, "rocketfuel", 5);
+        System.out.println("Spaceship" + spaceship.spaceshipProperties());
+        spaceship.rotate(30);
+        System.out.println("Spaceship after rotation" + spaceship.spaceshipProperties());
+        spaceship.accelerate(10);
+        System.out.println("Spaceship after acceleration" + spaceship.spaceshipProperties());
 
     }
 }
