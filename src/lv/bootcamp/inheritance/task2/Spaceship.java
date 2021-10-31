@@ -90,6 +90,7 @@ public class Spaceship extends SpaceObject {
     /**
      * This method moves the ship towards the rotation direction by distance acc.
      * This method updates coordinateX and coordinateY values.
+     *
      * @param acc
      */
     public void accelerate(double acc) {
@@ -122,7 +123,6 @@ public class Spaceship extends SpaceObject {
                 ", fuelConsumption=" + fuelConsumption +
                 '}';
     }
-
 
 
     public int getMass() {

@@ -35,7 +35,6 @@ public class SpaceObject {
     }
 
 
-
     /**
      * Argument constructor
      *

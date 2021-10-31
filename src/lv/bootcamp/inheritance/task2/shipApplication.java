@@ -15,10 +15,10 @@ public class shipApplication {
         spaceship.rotate(-70);
         System.out.println("The new ship direction is: " + spaceship.getDirection());
 
-        Spaceship spaceship1 = new Spaceship(0,0);
+        Spaceship spaceship1 = new Spaceship(0, 0);
         spaceship1.setDirection(30);
         spaceship1.accelerate(4);
-        System.out.println("For the SpaceShip1 the Y coordinate equals: "+ spaceship1.getCoordinateY()+", and X coordinate equals: " +
+        System.out.println("For the SpaceShip1 the Y coordinate equals: " + spaceship1.getCoordinateY() + ", and X coordinate equals: " +
                 spaceship1.getCoordinateX());
     }
 }
