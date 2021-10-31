@@ -4,6 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        KeyInputs spaceshipGame = new KeyInputs();
+    Spaceship ship = new Spaceship();
+
+        System.out.println(ship.getCoordinateX());
+        System.out.println(ship.getCoordinateY());
+
+    ship.rotate(361);
+    ship.accelerate(10);
+
+        System.out.println(ship.getCoordinateX());
+        System.out.println(ship.getCoordinateY());
     }
 }

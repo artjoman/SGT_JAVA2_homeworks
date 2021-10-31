@@ -1,7 +1,17 @@
 package lv.bootcamp.inheritance.task2;
 
 import lv.bootcamp.inheritance.task1.SpaceObject;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
 
+/**
+ * Spaceship class that inherits SpaceObject class.
+ * Additional Spaceship attributes defined in this class.
+ * Contains methods to rotate and accelerate a Spaceship object.
+ * ??Contains methods that bind keyboard keys to actions/methods - I am not sure this works.??
+ * Contains constructors, getters and setters, and toString methods.
+ * setDirection method includes input data validation.
+ */
 public class Spaceship extends SpaceObject {
 
     private int mass;
@@ -129,6 +139,61 @@ public class Spaceship extends SpaceObject {
 
     public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
+    }
+
+    /**
+     * Binds keyboard left arrow key to the method rotate in following way:
+     * WHEN pressing left arrow - call rotate method with -1 value.
+     */
+    public class LeftKey extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            rotate(-1);
+        }
+    }
+
+    /**
+     * Binds keyboard right arrow key to the method rotate in following way:
+     * WHEN pressing right arrow - call rotate method with +1 value.
+     */
+    public class RightKey extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            rotate(+1);
+        }
+    }
+
+    /**
+     * Binds keyboard up arrow key to the method rotate in following way:
+     * WHEN pressing up arrow - call accelerate method with +1 value.
+     */
+    public class UpKey extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            accelerate(+1);
+        }
+    }
+
+    /**
+     * Binds keyboard down arrow key to the method rotate in following way:
+     * WHEN pressing down arrow - call accelerate method with -1 value.
+     */
+    public class DownKey extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            accelerate(-1);
+        }
+    }
+
+    /**
+     * Binds keyboard space key in following way:
+     * WHEN pressing SPACE - show Spaceship's current coordinates.
+     */
+    public class SpaceKey extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            System.out.println(getCoordinateX() + getCoordinateY());
+        }
     }
 
     @Override

@@ -1,5 +1,11 @@
 package lv.bootcamp.inheritance.task1;
 
+/**
+ * Planet class that inherits SpaceObject class.
+ * Additional Planet attributes defined in this class.
+ * Contains methods to calculate distance and force between a planet and another planet.
+ * Contains constructors, getters and setters, and toString methods.
+ */
 public class Planet extends SpaceObject{
 
     private int mass;

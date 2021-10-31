@@ -1,5 +1,10 @@
 package lv.bootcamp.inheritance.task1;
 
+/**
+ * Class that is an abstraction of Space Objects.
+ * Space Object attributes defined in this class.
+ * Contains constructors, getters and setters, and toString methods.
+ */
 public class SpaceObject {
 
     private String name;
@@ -7,8 +12,8 @@ public class SpaceObject {
     private int width;
     private int height;
     private String colour;
-    private static double coordinateX;
-    private static double coordinateY;
+    private double coordinateX;
+    private double coordinateY;
 
     public SpaceObject() {
     }
@@ -63,7 +68,7 @@ public class SpaceObject {
         this.colour = colour;
     }
 
-    public static double getCoordinateX() {
+    public double getCoordinateX() {
         return coordinateX;
     }
 
@@ -71,7 +76,7 @@ public class SpaceObject {
         this.coordinateX = coordinateX;
     }
 
-    public static double getCoordinateY() {
+    public double getCoordinateY() {
         return coordinateY;
     }
 
