@@ -23,6 +23,7 @@ public class Planet extends SpaceObject {
      * Method - calcDistance(otherPlanet).
      * This method calculates the distance between two Planets.
      * Realized formula --> r2 = dx2 + dy2
+     *
      * @param planet
      * @return
      */
@@ -32,7 +33,7 @@ public class Planet extends SpaceObject {
         double x2 = planet.getCoordinateX();
         double y2 = planet.getCoordinateY();
         double distanceBetweenPlanets;
-        distanceBetweenPlanets=Math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+        distanceBetweenPlanets = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
         return distanceBetweenPlanets;
     }
 
@@ -41,6 +42,7 @@ public class Planet extends SpaceObject {
      * F = G * m1 * m2 / (r*r)
      * In this method is used Constant G = (6.67 * 10-11 N-m2 / kg2).
      * Method returns a double describing the force exerted on the planet by the another planet.
+     *
      * @return
      */
     public double calcForce(Planet planet) {
@@ -50,7 +52,7 @@ public class Planet extends SpaceObject {
         double m2 = planet.getMass();
 
         double r = calcDistance(planet);
-        double forceResult = (CONSTANT_G * m1 * m2)/(r*r);
+        double forceResult = (CONSTANT_G * m1 * m2) / (r * r);
         return forceResult;
     }
 

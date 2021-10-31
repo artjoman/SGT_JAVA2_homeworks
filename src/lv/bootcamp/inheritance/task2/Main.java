@@ -3,6 +3,7 @@ package lv.bootcamp.inheritance.task2;
 public class Main {
     /**
      * Main method for creating an objects and testing created methods.
+     *
      * @param args
      */
     public static void main(String[] args) {

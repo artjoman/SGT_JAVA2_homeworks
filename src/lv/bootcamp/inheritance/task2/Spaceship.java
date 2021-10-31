@@ -29,27 +29,29 @@ public class Spaceship extends SpaceObject {
 //Methods
 
     /**
-     *Method - rotate(degrees).
+     * Method - rotate(degrees).
      * This method rotates the ship by x degrees.
+     *
      * @param degrees
      */
     public void rotate(double degrees) {
         double rotatedX, rotatedY;
-            if (degrees > 360) {
-                degrees = degrees -360;
-            } else if (degrees < 0) {
-             degrees = degrees + 360;
-            }
-            double degreesToRadians = Math.toRadians(degrees);
-            rotatedX = this.getCoordinateX() * Math.cos(degreesToRadians) + this.getCoordinateY() * Math.sin(degreesToRadians);
-            rotatedY = this.getCoordinateX() * Math.sin(degreesToRadians) + this.getCoordinateY() * Math.cos(degreesToRadians);
-            System.out.println("New coordinates after rotation for " + this.getName() + " are: X --> " + rotatedX + " Y --> " + rotatedY);
+        if (degrees > 360) {
+            degrees = degrees - 360;
+        } else if (degrees < 0) {
+            degrees = degrees + 360;
         }
+        double degreesToRadians = Math.toRadians(degrees);
+        rotatedX = this.getCoordinateX() * Math.cos(degreesToRadians) + this.getCoordinateY() * Math.sin(degreesToRadians);
+        rotatedY = this.getCoordinateX() * Math.sin(degreesToRadians) + this.getCoordinateY() * Math.cos(degreesToRadians);
+        System.out.println("New coordinates after rotation for " + this.getName() + " are: X --> " + rotatedX + " Y --> " + rotatedY);
+    }
 
     /**
      * Method - accelerate(acc).
      * This method moves the ship towards the rotation direction by distance acc.
      * Used formulas: DeltaX = cos(α) * acc /// DeltaY = sin(α) * acc
+     *
      * @param acc - distance.
      * @return
      */

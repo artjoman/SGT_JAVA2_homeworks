@@ -10,7 +10,7 @@ public class Main {
 
         //Creating objects (planets)
         Planet planet1 = new Planet("Planet1", "Usual", 100, 200, "Red", 3, 5, 100, 0, 0);
-        Planet planet2 = new Planet("Planet2", "Unusual", 150, 188, "Blue", 10, 8, 200, 0,0);
+        Planet planet2 = new Planet("Planet2", "Unusual", 150, 188, "Blue", 10, 8, 200, 0, 0);
         Planet planet3 = new Planet("Planet3", "Just One more usual Planet", 230, 202, "Black", 1.6, 2.91, 288.5, 0, 0);
 
         //Method testing
