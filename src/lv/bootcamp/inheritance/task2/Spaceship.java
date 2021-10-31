@@ -35,30 +35,30 @@ public class Spaceship extends SpaceObject {
      */
     public void rotate(double degrees) {
         double rotatedX, rotatedY;
-//        if (degrees > 360) {
-//            degrees = degrees - 360;
-//        } else if (degrees < 0) {
-//            System.out.println("Error. Degrees can not be smaller than 0");
-//        }
-
-        rotatedX = this.getCoordinateX() * Math.cos(degrees) + this.getCoordinateY() * Math.sin(degrees);
-        rotatedY = this.getCoordinateX() * Math.sin(degrees) + this.getCoordinateY() * Math.cos(degrees);
-        System.out.println(rotatedX + " " + rotatedY);
-    }
+            if (degrees > 360) {
+                degrees = degrees -360;
+            } else if (degrees < 0) {
+             degrees = degrees + 360;
+            }
+            double degreesToRadians = Math.toRadians(degrees);
+            rotatedX = this.getCoordinateX() * Math.cos(degreesToRadians) + this.getCoordinateY() * Math.sin(degreesToRadians);
+            rotatedY = this.getCoordinateX() * Math.sin(degreesToRadians) + this.getCoordinateY() * Math.cos(degreesToRadians);
+            System.out.println("New coordinates after rotation for " + this.getName() + " are: X --> " + rotatedX + " Y --> " + rotatedY);
+        }
 
     /**
      * Method - accelerate(acc).
      * This method moves the ship towards the rotation direction by distance acc.
      * Used formulas: DeltaX = cos(α) * acc /// DeltaY = sin(α) * acc
-     * @param acc
+     * @param acc - distance.
      * @return
      */
     public void accelerate(double acc) {
         double DeltaX, DeltaY;
-        double a = 90;
-        DeltaX = this.getCoordinateX() + (Math.cos(a) * acc);
-        DeltaY = this.getCoordinateX() + (Math.sin(a) * acc);
-        System.out.println(DeltaX + " " + DeltaY);
+        double directionInRadians = Math.toRadians(this.getDirection());
+        DeltaX = this.getCoordinateX() + (Math.cos(directionInRadians) * acc);
+        DeltaY = this.getCoordinateX() + (Math.sin(directionInRadians) * acc);
+        System.out.println("New coordinates after acceleration for " + this.getName() + " are: X --> " + DeltaX + " Y --> " + DeltaY);
     }
 
     //Getters and Setters
