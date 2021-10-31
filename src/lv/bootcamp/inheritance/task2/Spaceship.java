@@ -21,21 +21,54 @@ public class Spaceship extends SpaceObject {
         this.direction = direction;
     }
 
+    /**
+     * Rotates the object by x degrees.
+     * @param degrees - how many degrees the object is rotated
+     */
     public void rotate(int degrees) {
         spaceship = new Spaceship();
 
         if (degrees < -360) {
-            spaceship.setDirection(360-Math.abs(degrees % 360));
+            spaceship.setDirection(360 - Math.abs(degrees % 360));
         } else if (degrees == -360 || degrees == 0 || degrees == 360) {
             spaceship.setDirection(direction);
         } else if (degrees > -360 && degrees < 0) {
-            spaceship.setDirection(degrees);
+            spaceship.setDirection(360 - Math.abs(degrees));
         } else if (degrees > 0 && degrees < 360) {
-            spaceship.setDirection(Math.abs(direction % 360));
+            spaceship.setDirection(degrees);
         } else if (degrees > 360) {
-            spaceship.setDirection(Math.abs(direction % 360));
+            spaceship.setDirection(degrees % 360);
         }
         System.out.println(spaceship.getDirection());
+    }
+
+    /**
+     * Moves the object towards the rotation direction by distance
+     * and updates coordinateX and coordinateY values.
+     * @param acc - distance
+     */
+    public void accelerate(double acc) {
+        spaceship = new Spaceship();
+        spaceship.setDirection(30); // just to check the result
+
+        double deltaX;
+        double deltaY;
+
+        deltaX = Math.cos(Math.toRadians(spaceship.getDirection())) * acc;
+        deltaY = Math.sin(Math.toRadians(spaceship.getDirection())) * acc;
+        spaceship.setCoordinateX(getCoordinateX() + deltaX);
+        spaceship.setCoordinateY(getCoordinateY() + deltaY);
+
+        System.out.println(spaceship.getCoordinateX());
+        System.out.println(spaceship.getCoordinateY());
+    }
+
+    /**
+     * Shows current coordinates of the object.
+     */
+    public void showCurrentCoordinates() {
+        System.out.println("Coordinate X: " + spaceship.getCoordinateX() +
+                ", coordinate Y: " + spaceship.getCoordinateY());
     }
 
     public double getMass() {
