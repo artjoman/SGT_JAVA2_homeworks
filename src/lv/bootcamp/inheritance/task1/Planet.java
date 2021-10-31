@@ -87,4 +87,5 @@ public class Planet extends SpaceObject{
         double force = (gravitationalConstant * mass1 * mass2) / Math.pow(calcDistance(otherPlanet), 2);
         return force;
     }
+
 }
