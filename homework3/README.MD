@@ -9,9 +9,9 @@ Rules:
 - Try to use class selectors first. If it is not possible - try to use ID. Use HTML global selectors as last resort
 - All the images are located in /img directory. Remember you can reference images from your CSS
 - As a background, please use body-bg.gif image. Repeat the image as a bacground pattern
--  Colors can be retrieved from the provided image, using eyepicker tool or *similar* color can be used instead
+-  Colors can be retrieved from the provided image, using colorpicker tool or *similar* color can be used instead
 -  Please use https://www.w3schools.com/css/ as your main reference for CSS tricks. Please don't hesitate to use internet to search for different CSS approaches
-
+- Only Desktop resolution should be taken in consideration. No need to try building mobile-friendly version
 
 ## Submission
 1. Clone repository https://github.com/artjoman/SGT_JAVA2_homeworks
