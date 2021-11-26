@@ -1,3 +1,172 @@
-body {
-  background-color: pink;
+#shell {
+  margin: auto;
+  width: 70%;
 }
+
+
+
+body {
+ background-image: url("img/body-bg.gif");
+}
+
+
+#shell #header .social span {
+	background-image: url("img\social.gif") no-repeat;
+	}
+
+#shell #header .social li {
+		display: none;
+	}
+
+
+
+#shell #header #logo a {
+ color: orange;
+}
+
+
+
+#navigation {
+ float: right;
+}
+
+#navigation li {
+ display: inline;
+}
+
+#navigation .active {
+ color: red;
+}
+
+#navigation li a {
+ color: white;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight: bold;
+ padding:12px;
+}
+
+
+
+
+#sub-navigation li {
+ display: inline;
+}
+
+#sub-navigation li a {
+color: white;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+
+
+
+
+#news {
+  width: 50%;
+  float: left;
+}
+
+#news .head h3 {
+ color: white;
+ text-transform: uppercase;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+#news .text-right a {
+ color: orange;
+}
+
+#news a {
+ color: orange;
+ font-size: 10px;
+}
+
+#news .content h4 {
+ color: orange;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+#news .content .date {
+ color: white;
+}
+
+#news .content {
+ color: white;
+  line-height: 1.0;
+}
+
+
+
+#coming {
+  width: 50%;
+  float: right;
+}
+
+#coming .head h3 {
+ color: white;
+ text-transform: uppercase;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+#coming .text-right a {
+ color: orange;
+}
+
+#coming a {
+ color: orange;
+ font-size: 10px;
+}
+
+#coming .content h4 {
+ color: orange;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+#coming .content {
+ color: white;
+}
+
+#coming .content img {
+  float: left;
+  padding: 8px;
+}
+
+
+
+
+#footer .lf {
+  width: 50%;
+  float: left;
+  text-align: left;
+  color: #BEBEBE;
+  font-size: 10px;
+}
+
+#footer .lf a {
+ color: #BEBEBE;
+ text-decoration: none;
+ font-size: 10px;
+}
+
+#footer .rf {
+  width: 50%;
+  float: right;
+  text-align: right;
+  color: #BEBEBE;
+  font-size: 10px;
+}
+
+#footer .rf a {
+ color: #BEBEBE;
+ text-decoration: none;
+ font-size: 10px;
+}
+
+
