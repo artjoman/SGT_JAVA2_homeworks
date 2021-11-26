@@ -4,19 +4,32 @@
 }
 
 
-
 body {
  background-image: url("img/body-bg.gif");
 }
 
 
+#header .social {
+    clear: both;
+    position: relative;
+    margin-top: 0px;
+    float: right;
+}
+
 #shell #header .social span {
-	background-image: url("img\social.gif") no-repeat;
-	}
+ color: #BEBEBE;
+ text-decoration: none;
+ font-size: 10px;
+}
+
+#shell #header .social:after {
+ text-decoration:none;
+ content: url("img/social.gif");
+}
 
 #shell #header .social li {
-		display: none;
-	}
+ display: none;
+}
 
 
 
@@ -28,10 +41,11 @@ body {
 
 #navigation {
  float: right;
+  margin-top: 30px;
 }
 
 #navigation li {
- display: inline;
+ display: inline-block;
 }
 
 #navigation .active {
@@ -60,6 +74,47 @@ color: white;
  font-weight: bold;
 }
 
+
+#main #content .box .head h2 {
+ color: orange;
+ font-size: 12px;
+ text-transform: uppercase;
+}
+
+#main #content .box .head h2, .text-right {
+ display:inline;
+}
+
+#main #content .box .head .text-right a {
+ float:right;
+ color: orange;
+ font-size: 12px;
+}
+
+
+#shell #main #content .box .movie .rating p, .comments {
+ color: white;
+ text-transform: uppercase;
+ font-size: 12px;
+ display: inline;
+}
+
+#shell #main #content .box .movie .rating .stars .stars-in {
+ content: url("img/stars.gif");
+}
+
+#shell #main #content .box .movie .movie-image .play .name {
+    display:none;
+}
+
+#shell #main #content .box .movie {
+display: inline-block;
+}
+
+#shell #main #content .box .movie .movie-image a img{
+   width: 150px;
+
+}
 
 
 
@@ -139,7 +194,12 @@ color: white;
 }
 
 
-
+#footer {
+    clear: both;
+    position: relative;
+    height: 50px;
+    margin-top: -200px;
+}
 
 #footer .lf {
   width: 50%;
