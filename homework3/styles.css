@@ -1,0 +1,406 @@
+
+/* for all projects to add this */
+html{
+box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+.cl{
+ clear:both;
+}
+/* -------------------------------BODY-------------------------------------- */
+/* our body is 1000px, text of news is white */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width:1000px;
+  color:white;
+  background-image: url("./img/body-bg.gif");
+}
+
+
+/* ----------------------------- DEMO ONLINE MOVIE  ------------------------ */
+
+/* Demo online  */
+#logo{
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* text Demo online */
+#logo a{
+  color:#e7b038;
+  font-size: 24px;
+  font-family: sans-serif;
+  position: relative;
+  top: 50px;
+  display: inline-block;
+  width: 25%;
+}
+
+/* ----------------------HOME, NEWS, IN THEATER...---------------------------- */
+/* home, news, ... block */
+#navigation ul{
+ padding-left: 0px;
+ text-align: right;
+ position: relative;
+ top: -50px;
+}
+
+/* home news... inline, items */
+#navigation li{
+  display: inline;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+/* common properties for white bold text :home news, show all, search,
+News, coming soon */
+#navigation a, #sub-navigation a, #search label, #news h3, #coming h3{
+  color:white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/*------------------- HOOVER RED---------------------------- */
+/* common property for different titles */
+#navigation a:hover, #sub-navigation a:hover , h3:hover, #news h3:hover, #coming h3:hover{
+  color: red;
+}
+
+
+/*-------------------------- SHOW ALL,LATEST TRAILERS --------------------- */
+/* block */
+#sub-navigation{
+  position: relative;
+  padding-top:10px;
+  padding-bottom:10px;
+  display: block;
+  border-top: 1px dashed #8c959f;
+}
+
+
+#sub-navigation ul{
+  display: inline;
+  padding-left: 0px;
+}
+
+/* show all latest...inline, margin */
+#sub-navigation li{
+  display: inline;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+/* ---------------------------------------SEARCH--------------------------- */
+/* all search block */
+#search{
+  float: right;
+  display: inline;
+  padding-bottom: 5px;
+}
+
+/*  go button*/
+.search-button{
+  color: white;
+  font-weight: bolder;
+  background-image: url("./img/body-bg.gif");
+  border: 0 none;
+}
+
+/* search field */
+#search-field{
+  border:none;
+  background-color: black;
+  color:#787878;
+}
+
+
+/*-------------------- FOLLOW US FACEBOOK------------------------------- */
+
+/* position of all the block */
+.social {
+  position: relative;
+  top: -70px;
+  right: -830px;
+}
+
+/* follow us */
+.social span{
+  color: #8c959f;
+  font-size: 11px;
+  font-family: sans-serif;
+  margin: 0px;
+  display:inline-block;
+}
+
+/* icons after follow us*/
+.social ul{
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* icons one after another */
+.social span, .social li{
+  display: inline;
+}
+
+/* cutting twitter icon, hiding text */
+.twitter{
+  display: inline-block;
+  text-indent: -6000px;
+  background-image: url("./img/social.gif") ;
+  width:70px;
+  height: 16px;
+  clip-path: inset(0% 75% 0% 0%);
+  margin-right: -54px;
+}
+
+/* cutting facebook icon, hiding text */
+.facebook {
+  display: inline-block;
+  text-indent: -6000px;
+  background-image: url("./img/social.gif") ;
+  width:70px;
+  height: 16px;
+  clip-path: inset(0% 50% 0% 25%);
+  margin-right: -32px;
+  margin-left: -20px;
+}
+
+/* cutting vimeo icon, hiding text */
+.vimeo{
+  display: inline-block;
+  text-indent: -6000px;
+  background-image: url("./img/social.gif") ;
+  width:70px;
+  height: 16px;
+  clip-path: inset(0% 25% 0% 50%);
+  margin-right: -16px;
+  margin-left: -42px;
+}
+
+/* cutting rss icon, hiding text */
+.rss{
+  display: inline-block;
+  text-indent: -6000px;
+  background-image: url("./img/social.gif") ;
+  width:70px;
+  height: 16px;
+  clip-path: inset(0% 0% 0% 75%);
+  margin-left: -58px;
+}
+
+
+/* -----------------------LATEST TRAILERS SEE ALL  ----------------- */
+/* latest trailers, top rated  */
+h2{
+  /* clear:both; */
+  color: #ed991a;
+  font-size: 10px;
+  display: inline-block;
+  float:left;
+  font-family: sans-serif;
+  text-align: left;
+  /* margin-right: 80%; */
+
+}
+
+/* see all */
+.text-right a{
+  color: #ed991a;
+  font-size: 12px;
+  display: inline-block;
+  float:right;
+  position: relative;
+  top: -10px;
+}
+
+
+/*  latest trailers and see all */
+/* vse heads no bbez news i coming soon , tam otdelņo punktir */
+ .box .head {
+  display: block;
+  width: 1000px;
+  overflow: hidden;
+  clear:both;
+  position: relative;
+  border-top: 1px dashed #8c959f;
+}
+
+
+
+
+
+/* .head::after{
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+
+/* ----------------------------------MOVIES------------------------- */
+
+/* to adjust different sizes of movie images, otherwise ratings
+are not on the straight line */
+.movie-image img{
+  display: table;
+}
+
+/*movie image and rating*/
+ .movie{
+  float: left;
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 12px;
+}
+
+
+
+/* raiting , space betwen rating and image*/
+.rating{
+display: inline;
+position: relative;
+top: 5px;
+font-family: sans-serif;
+float:left;
+}
+
+/* rating text */
+.rating p{
+  font-size: 10px;
+  font-weight: bolder;
+  display: inline;
+  width:38px;
+}
+
+/* position of 12 manually */
+ .comments{
+  display: inline;
+  font-size:13px;
+  position: relative;
+  color: #9f9f9f;
+  top:2px;
+  left: 30px;
+}
+
+/* stars */
+.stars, .stars-in{
+  height: 11px;
+  font-size: 1px;
+  background: url("./img/stars.gif");
+}
+/* all 5 grey stars */
+.stars{
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+}
+/* 4 stars golden- 4/5 or 80% of all the stars,
+11px is the width of 1 star, we move to the next line */
+ .stars-in{
+  width:80%;
+  display: block;
+  background-position: 0 -11px;
+}
+
+
+/* chtob ne videt'imya */
+.name{
+  font-size: 0px;
+}
+
+
+/* -----------------------------------NEWS COMING SOON-------------------- */
+#news, #coming{
+  display:table-cell;
+  position: relative;
+  border-top: 1px dashed #8c959f;
+}
+
+#coming{
+  padding-left: 30px;
+  width:530px;
+}
+
+
+/* ---------------------------TEXT---------------------------------------- */
+/* dates */
+.date{
+  font-size: 12px;
+  font-family: sans-serif;
+  padding-bottom: 5px;
+}
+
+/* paragraph titles */
+.content h4{
+  color:#f3b12b;
+  font-family: sans-serif;
+  padding-bottom: 3px;
+  margin: 0;
+}
+
+/* text */
+.content p{
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 13px;
+  padding-bottom: 3px;
+}
+
+/* block- date, title, read more */
+.content{
+  padding-bottom: 30px;
+}
+
+/* read more */
+.content a{
+  text-decoration: underline;
+  color: #f3b12b;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* image in coming soon */
+.content img{
+  float:left;
+  margin: 5px;
+}
+/* ------------------ */
+.cl{
+ clear:both;
+}
+
+/* ----------------------------------FOOTER--------------------------------- */
+
+#footer{
+  border-top: 1px dashed #8c959f;
+}
+
+/* left side of the footer*/
+.lf{
+  float:left;
+  position: relative;
+  top:8px;
+}
+
+/* right side of the footer */
+.rf{
+  float: right;
+  position: relative;
+  top:8px;
+}
+
+/* common properties for footer */
+.lf, .rf, .rf a, .lf a{
+  color:#8c959f;
+  font-size: 11px;
+  text-decoration: none;
+
+}
