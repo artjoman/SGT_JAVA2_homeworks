@@ -1,0 +1,367 @@
+html {
+  background: #080808;
+  background-image: linear-gradient(
+      45deg,
+      rgba(49, 49, 49, 0.25) 25%,
+      transparent 0,
+      transparent 75%,
+      rgba(49, 49, 49, 0.25) 0
+    ),
+    linear-gradient(
+      45deg,
+      rgba(49, 49, 49, 0.25) 25%,
+      transparent 0,
+      transparent 75%,
+      rgba(49, 49, 49, 0.25) 0
+    );
+
+  background-position: 0 0, 15px 15px, 15px 15px, 30px 30px;
+  background-size: 10px 10px;
+  width: 100%;
+  height: auto;
+  min-width: 1000px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: aliceblue;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+#shell {
+  block-size: fit-content;
+  width: fit-content;
+}
+
+.social {
+  color: grey;
+  top: 3px;
+  position: absolute;
+  width: fit-content;
+  margin-left: 70%;
+  margin-right: 10%;
+}
+.social span {
+  display: inline-flex;
+  flex-direction: row;
+}
+.social ul {
+  text-align: right;
+  list-style-type: none;
+  top: 8px;
+  right: 2px;
+  margin-left: 2px;
+  display: inline-flex;
+  flex-direction: row;
+  padding-inline-start: 2px;
+}
+.social ul a {
+  padding: 5px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 2px;
+  border-radius: 3px;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-self: baseline;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+h1#logo a {
+  color: orange;
+  width: 20%;
+  height: 15%;
+  margin-top: 10px;
+}
+#navigation {
+  display: inline-flex;
+  flex-direction: row;
+  padding-inline-start: 0px;
+  justify-content: flex-end;
+  align-self: baseline;
+  float: right;
+}
+
+#navigation ul {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  padding-inline-start: 0px;
+
+  align-items: baseline;
+}
+#navigation ul a:link {
+  color: white;
+  padding-left: 25px;
+  text-decoration: none;
+}
+#navigation ul a:visited {
+  color: blue;
+}
+
+#navigation ul a:hover {
+  color: red;
+}
+
+#sub-navigation {
+  border-style: dashed;
+  border-top-color: rgb(58, 58, 58);
+  border-bottom-color: rgb(58, 58, 58);
+  border-right-width: 0;
+  border-left-width: 0;
+  text-align: left;
+  margin-top: 50px;
+}
+#sub-navigation ul {
+  list-style-type: none;
+  display: inline-flex;
+  padding-inline-start: 0px;
+}
+#sub-navigation ul a {
+  color: white;
+  padding-right: 25px;
+  text-decoration: none;
+}
+#search {
+  float: right;
+  right: 65px;
+  display: inline-flex;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+#search-field {
+  color: rgb(58, 58, 58);
+  background-color: black;
+  border: rgb(39, 38, 38), groove;
+}
+.search-button {
+  border: none;
+  color: white;
+  font-style: bold;
+  background: none;
+}
+#main {
+  font-family: sans-serif;
+  block-size: fit-content;
+  width: fit-content;
+  border-style: dashed;
+  border-top: none;
+  border-bottom-color: rgb(58, 58, 58);
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+h2 {
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: left;
+  display: inline;
+}
+.head {
+  color: rgb(219, 144, 4);
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+.text-right {
+  padding-bottom: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  padding-inline-start: 0px;
+  justify-content: flex-end;
+  align-self: baseline;
+  float: right;
+}
+.text-right a {
+  color: rgb(219, 144, 4);
+  text-align: right;
+  vertical-align: middle;
+}
+
+.movie {
+  display: inline-block;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 15%;
+  height: auto;
+  object-fit: contain;
+}
+.movie .movie-image a img {
+  display: block;
+  max-width: 100%;
+  width: 150%;
+  height: auto;
+  object-fit: contain;
+}
+
+.movie-image span.name {
+  position: absolute;
+  visibility: hidden;
+}
+#news {
+  display: inline-block;
+  width: 49%;
+  padding-right: 1%;
+}
+#news .head .text-right {
+  display: inline-flex;
+  flex-direction: row;
+  padding-inline-start: 0px;
+  justify-content: flex-end;
+  align-self: baseline;
+  float: right;
+  vertical-align: text-top;
+  margin-top: 10px;
+  width: 45%;
+}
+#coming .head .text-right {
+  display: inline-flex;
+  flex-direction: row;
+  padding-inline-start: 0px;
+  justify-content: flex-end;
+  align-self: baseline;
+  float: right;
+}
+#coming {
+  float: right;
+  display: block;
+  flex-direction: row;
+  width: 50%;
+}
+#coming .content p {
+  float: right;
+  width: 80%;
+}
+
+.rating {
+  text-align: left;
+  font-size: x-small;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+  height: 15px;
+  object-fit: contain;
+}
+.rating p {
+  padding-bottom: 10px;
+}
+.stars {
+  align-items: center;
+  display: inline-block;
+  height: 6vh;
+  justify-content: center;
+  margin-top: 12px;
+  margin-left: 3px;
+  margin-right: 8px;
+}
+.checked {
+  color: orange;
+}
+.stars-in {
+  display: inline-block;
+  position: relative;
+}
+.comments {
+  display: inline-block;
+  position: relative;
+  margin-top: 12px;
+  font-size: x-small;
+  margin-left: 35px;
+}
+.box {
+  border-style: dashed;
+  border-top: none;
+  border-bottom-color: rgb(58, 58, 58);
+  border-right-width: 0;
+  border-left-width: 0;
+  box-sizing: content-box;
+  resize: vertical;
+}
+h3 {
+  color: white;
+  display: inline-block;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+}
+h3 strong {
+  color: red;
+}
+p {
+  margin: 2px;
+}
+.date {
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+h4 {
+  color: rgb(230, 151, 4);
+  margin-top: 1px;
+  margin-block-end: 1em;
+  margin-bottom: 1px;
+}
+
+.content a {
+  color: rgb(230, 151, 4);
+  font: smaller;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+#coming content {
+  height: fit-content;
+  width: auto;
+}
+#coming content p,
+a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#footer {
+  color: grey;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: smaller;
+  display: flex;
+}
+#footer a {
+  color: grey;
+  text-decoration: none;
+}
+.lf {
+  float: left;
+  width: 89%;
+}
+.rf {
+  float: right;
+  width: 11%;
+  text-align: right;
+}
