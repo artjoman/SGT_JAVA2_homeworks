@@ -1,0 +1,319 @@
+body {
+background-image: url("./img/body-bg.gif");
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: small;
+font-weight: bolder;
+color: white;
+
+margin-left: auto;
+margin-right: auto;
+width:1150px;
+}
+
+/* HEADER GRID */
+#header {
+display: grid;
+grid-template-rows: 30px 100px 40px;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:    "social social social social follow icons"
+                        "demo demo nav nav nav nav"
+                        "subnav subnav subnav subnav subnav subnav";
+}
+
+/* hover */
+h1 a:hover, #navigation ul li a:hover, #sub-navigation ul li a:hover {
+    color: red;
+}
+
+/* SOCIAL */
+#header .social span {
+    grid-area: follow;
+    position: absolute;
+    right: 460px;
+    top: 12px;
+    font-weight: 100;
+    color: gray;
+
+}
+
+.social ul li {
+    visibility: hidden;
+    list-style-type: none;
+  
+}
+   
+
+.social ul {
+    grid-area: icons;
+    background-image: url("./img/social.gif"); 
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 310px;
+    width: 100px;
+    top: 0;
+}    
+ 
+ 
+
+/* LOGO */
+#header .h1 {
+grid-area: demo;
+}
+
+h1 a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(231, 176, 56);
+    font-size: 24px;
+}
+
+#header #sub-navigation {
+     grid-area: subnav;
+     
+}
+
+ /* NAVIGATION AND SUBNAVIGATION */
+#header #navigation {
+    grid-area: nav;
+
+}
+
+#navigation ul, #sub-navigation ul {
+list-style-type: none; 
+display: flex;
+flex-direction: row;
+}
+
+#navigation ul li a, #sub-navigation ul li a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 1em;
+    
+}
+
+#navigation ul {
+    float: right;
+}
+
+#sub-navigation {
+    border-top: 1px dashed gray ;
+    border-bottom: 1px dashed gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* SEARCH */
+
+.search-button{
+    color: white;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+}
+
+.search-button:hover, #search label[for=search-field]:hover {
+    color: red;
+}
+
+#search-field{
+    background-color: black;
+    color:gray;
+}
+
+
+/* LATEST TRAILERS */
+h2 {
+    color: rgb(231, 176, 56);
+}
+
+/* MOVIES */
+
+#content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 330px 330px 330px;
+    grid-template-areas:    "movies1"
+                            "movies2"
+                            "movies3";
+}
+
+
+.box {
+    border-bottom: 1px dashed gray;
+}
+
+.box:nth-child(1) {
+grid-area: movies1;
+
+}
+
+.box:nth-child(2) {
+grid-area: movies2;  
+}
+
+.box:nth-child(3) {
+grid-area: movies3;     
+}
+
+/* HEAD */
+.box .head { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* SEE ALL */
+div p.text-right a {    
+    font-weight: 100;
+    color: rgb(231, 176, 56);
+}
+
+
+.movie {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.movie:nth-child(7) {
+    margin-right: 0px;
+}
+
+
+/* hide movie name */
+.name {
+    display: none;
+    visibility: hidden;
+}
+
+/* STARS */
+.stars, .stars-in{
+    height: 11px;
+    font-size: 1px;
+    background: url("./img/stars.gif");
+}
+ 
+.stars{
+    display: inline-block;
+    width: 60px;
+}
+
+.stars-in{
+    width:80%;
+    display: block;
+    background-position: 0 -11px;
+}
+
+.rating {
+    align-items: center;
+    display: flex;
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+
+/* .rating p {
+    font-size: small;
+    float: left;
+} */
+
+.comments {
+    font-weight: 100;
+    color: grey;
+    float: right;
+}
+
+/* NEWS AND COMING SOON */
+#news, #coming{
+    display:table-cell;
+    position: relative;
+    border-top: 1px dashed gray;
+  }
+  
+  #coming{
+    padding-left: 30px;
+    width:530px;
+  }
+
+  #news .head, #coming .head {
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+  }
+  
+  
+  /* TEXT */
+  .date {
+    font-size: 12px; 
+    font-weight: 100;
+    font-family: sans-serif;
+    padding-bottom: 5px;
+  }
+  
+  /* paragraph titles */
+  .content h4{
+    color:#f3b12b;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  
+  /* text */
+  .content p{
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
+  
+  /* block- date, title, read more */
+  .content{
+    padding-bottom: 30px;
+  }
+  
+  /* read more */
+  .content a{
+    text-decoration: underline;
+    color: #f3b12b;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  
+  /* image in coming soon */
+  .content img{
+    float:left;
+    margin-right: 10px;
+  }
+ 
+  .cl{
+   clear:both;
+  }
+
+  #footer {
+      display: flex; 
+      flex-direction: row; 
+      align-items: center;
+      justify-content:space-between;
+      font-size: 14px; 
+      font-weight: 100; 
+      color: gray;
+  }
+
+
+.lf a, .rf a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+
+
+
