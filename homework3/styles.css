@@ -1,124 +1,145 @@
 #shell {
-  margin: auto;
-  width: 70%;
+   margin: auto;
+   width: 70%;
 }
 
 body {
- background-image: url("img/body-bg.gif");
-
+    background-image: url("img/body-bg.gif");
 }
 
 
 #header .social {
-position: absolute;
- top: 20px;
- left: 1050px;
- margin-top: 0px;
- float: right;
- width:100%;
+    position: absolute;
+    top: 20px;
+    left: 1050px;
+    margin-top: 0px;
+    float: right;
+    width:100%;
  }
 
 
 #shell #header .social span {
- color: #BEBEBE;
- text-decoration: none;
- font-size: 10px;
+    color: #BEBEBE;
+    text-decoration: none;
+    font-size: 10px;
 }
 
 #shell #header .social:after {
- text-decoration:none;
- content: url("img/social.gif");
+    text-decoration:none;
+    content: url("img/social.gif");
 }
 
 #shell #header .social li {
- display: none;
+    display: none;
 }
 
 
 
 #shell #header #logo a {
- color: orange;
+    color: orange;
 }
 
 #shell #header #logo {
- display: inline-block;
- font-size: 20px;
+    font-size: 20px;
 }
 
 
 
 #navigation {
- float: right;
- margin-top: 30px;
+    clear: both;
+    float: right;
+    margin-top: 30px;
 }
 
 #navigation li {
- display: inline-block;
+    display: inline-block;
 }
 
 #navigation .active {
- color: red;
+    color: red;
 }
 
 #navigation li a {
- color: white;
- text-decoration: none;
- text-transform: uppercase;
- font-weight: bold;
- padding:12px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:12px;
 }
 
 
 
+#shell #header #sub-navigation {
+    height: auto;
+    clear: both;
+}
 
 #sub-navigation li {
- display: inline;
+    display: inline;
 }
 
 #sub-navigation li a {
-color: white;
-text-decoration: none;
-text-transform: uppercase;
-font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-#shell #header #sub-navigation {
-display: block;
-  width: auto;
-  height: auto;
-  padding: 5px;
+#shell #header #sub-navigation #search {
+    color: white;
+    font-weight: bold;
+    clear: both;
+    float: left;
 }
+
+#shell #header #sub-navigation #search input.search-button {
+    color: white;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+
+#shell #header #sub-navigation #search input.search-field.blink.search-field {
+    color: gray;
+    background: black;
+}
+
+
+
+
+
 
 #main {
-display: block;
+    display: block;
+    clear: both;
 }
 
 #main #content .box .head h2 {
- color: orange;
- font-size: 12px;
- text-transform: uppercase;
+    color: orange;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 #main #content .box .head h2, .text-right {
- display:inline;
+    display:inline;
 }
 
 #main #content .box .head .text-right a {
- float:right;
- color: orange;
- font-size: 12px;
+    float:right;
+    color: orange;
+    font-size: 12px;
 }
 
 
 #shell #main #content .box .movie .rating p, .comments {
- color: white;
- text-transform: uppercase;
- font-size: 12px;
- display: inline;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline;
 }
 
 #shell #main #content .box .movie .rating .stars .stars-in {
- content: url("img/stars.gif");
+    content: url("img/stars.gif");
 }
 
 #shell #main #content .box .movie .movie-image .play .name {
@@ -126,11 +147,11 @@ display: block;
 }
 
 #shell #main #content .box .movie {
-display: inline-block;
+    display: inline-block;
 }
 
 #shell #main #content .box .movie .movie-image a img{
-   width: 150px;
+    width: 150px;
 
 }
 
@@ -138,77 +159,77 @@ display: inline-block;
 
 
 #news {
-  width: 50%;
-  float: left;
+    width: 50%;
+    float: left;
 }
 
 #news .head h3 {
- color: white;
- text-transform: uppercase;
- font-weight: bold;
- text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #news .text-right a {
- color: orange;
+    color: orange;
 }
 
 #news a {
- color: orange;
- font-size: 10px;
+    color: orange;
+    font-size: 10px;
 }
 
 #news .content h4 {
- color: orange;
- text-transform: uppercase;
- font-weight: bold;
+    color: orange;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #news .content .date {
- color: white;
+    color: white;
 }
 
 #news .content {
- color: white;
-  line-height: 1.0;
+    color: white;
+    line-height: 1.0;
 }
 
 
 
 #coming {
-  width: 50%;
-  float: right;
+    width: 50%;
+    float: right;
 }
 
 #coming .head h3 {
- color: white;
- text-transform: uppercase;
- font-weight: bold;
- text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #coming .text-right a {
- color: orange;
+    color: orange;
 }
 
 #coming a {
- color: orange;
- font-size: 10px;
+    color: orange;
+    font-size: 10px;
 }
 
 #coming .content h4 {
- color: orange;
- text-transform: uppercase;
- font-weight: bold;
+    color: orange;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #coming .content {
- color: white;
+    color: white;
 }
 
 #coming .content img {
-  float: left;
-  padding: 8px;
+    float: left;
+    padding: 8px;
 }
 
 
@@ -220,31 +241,31 @@ display: inline-block;
 }
 
 #footer .lf {
-  width: 50%;
-  float: left;
-  text-align: left;
-  color: #BEBEBE;
-  font-size: 10px;
+    width: 50%;
+    float: left;
+    text-align: left;
+    color: #BEBEBE;
+    font-size: 10px;
 }
 
 #footer .lf a {
- color: #BEBEBE;
- text-decoration: none;
- font-size: 10px;
+    color: #BEBEBE;
+    text-decoration: none;
+    font-size: 10px;
 }
 
 #footer .rf {
-  width: 50%;
-  float: right;
-  text-align: right;
-  color: #BEBEBE;
-  font-size: 10px;
+    width: 50%;
+    float: right;
+    text-align: right;
+    color: #BEBEBE;
+    font-size: 10px;
 }
 
 #footer .rf a {
- color: #BEBEBE;
- text-decoration: none;
- font-size: 10px;
+    color: #BEBEBE;
+    text-decoration: none;
+    font-size: 10px;
 }
 
 
