@@ -1,5 +1,6 @@
 #shell {
    margin: auto;
+   height: 100%;
    width: 70%;
 }
 
@@ -7,16 +8,19 @@ body {
     background-image: url("img/body-bg.gif");
 }
 
+/*
+.cl {
+display: flex;
+border-top: 1px dashed #bbb;
+}
+*/
 
 #header .social {
     position: absolute;
-    top: 20px;
     left: 1050px;
     margin-top: 0px;
     float: right;
-    width:100%;
- }
-
+}
 
 #shell #header .social span {
     color: #BEBEBE;
@@ -40,15 +44,19 @@ body {
 }
 
 #shell #header #logo {
-    font-size: 20px;
+    font-size: 23px;
+    float: left;
+    width: 175px;
+    display: inline-block;
+    margin-top: 80px;
 }
 
 
 
 #navigation {
-    clear: both;
     float: right;
-    margin-top: 30px;
+    width: auto;
+    margin-top: 80px;
 }
 
 #navigation li {
@@ -70,12 +78,12 @@ body {
 
 
 #shell #header #sub-navigation {
-    height: auto;
-    clear: both;
 }
 
 #sub-navigation li {
-    display: inline;
+    display: inline-block;
+    float: left;
+    width: auto;
 }
 
 #sub-navigation li a {
@@ -86,10 +94,11 @@ body {
 }
 
 #shell #header #sub-navigation #search {
+    display: inline;
     color: white;
     font-weight: bold;
-    clear: both;
-    float: left;
+    float: right;
+
 }
 
 #shell #header #sub-navigation #search input.search-button {
@@ -103,9 +112,6 @@ body {
     color: gray;
     background: black;
 }
-
-
-
 
 
 
@@ -130,7 +136,6 @@ body {
     font-size: 12px;
 }
 
-
 #shell #main #content .box .movie .rating p, .comments {
     color: white;
     text-transform: uppercase;
@@ -152,15 +157,15 @@ body {
 
 #shell #main #content .box .movie .movie-image a img{
     width: 150px;
-
 }
 
 
 
-
 #news {
+    display: block;
     width: 50%;
     float: left;
+    height: auto;
 }
 
 #news .head h3 {
@@ -172,33 +177,45 @@ body {
 
 #news .text-right a {
     color: orange;
+    float: right;
 }
 
 #news a {
     color: orange;
     font-size: 10px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #news .content h4 {
     color: orange;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #news .content .date {
     color: white;
+    font-size: 10px;
 }
 
 #news .content {
     color: white;
-    line-height: 1.0;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
 
 #coming {
+    display: block;
     width: 50%;
     float: right;
+    height: auto;
 }
 
 #coming .head h3 {
@@ -206,21 +223,28 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #coming .text-right a {
     color: orange;
+    font-size: 10px;
+    float: right;
 }
 
 #coming a {
     color: orange;
-    font-size: 10px;
 }
 
 #coming .content h4 {
     color: orange;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #coming .content {
@@ -231,6 +255,7 @@ body {
     float: left;
     padding: 8px;
 }
+
 
 
 #footer {
