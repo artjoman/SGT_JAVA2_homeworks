@@ -3,18 +3,21 @@
   width: 70%;
 }
 
-
 body {
  background-image: url("img/body-bg.gif");
+
 }
 
 
 #header .social {
-    clear: both;
-    position: relative;
-    margin-top: 0px;
-    float: right;
-}
+position: absolute;
+ top: 20px;
+ left: 1050px;
+ margin-top: 0px;
+ float: right;
+ width:100%;
+ }
+
 
 #shell #header .social span {
  color: #BEBEBE;
@@ -37,11 +40,16 @@ body {
  color: orange;
 }
 
+#shell #header #logo {
+ display: inline-block;
+ font-size: 20px;
+}
+
 
 
 #navigation {
  float: right;
-  margin-top: 30px;
+ margin-top: 30px;
 }
 
 #navigation li {
@@ -69,11 +77,21 @@ body {
 
 #sub-navigation li a {
 color: white;
- text-decoration: none;
- text-transform: uppercase;
- font-weight: bold;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
 }
 
+#shell #header #sub-navigation {
+display: block;
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
+#main {
+display: block;
+}
 
 #main #content .box .head h2 {
  color: orange;
