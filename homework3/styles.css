@@ -1,3 +1,236 @@
 body {
-  background-image: url("./img/body-bg.gif");
-  }
+    background-image: url("./img/body-bg.gif");
+    position: absolute;
+    width:100%;
+    height: 100%;
+
+}
+#header {
+     position:relative;
+}
+
+#shell {
+    margin:0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 980px;
+    position: relative;
+    padding-top: 30px;
+}
+
+#logo a {
+    color:#E7B036;
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+    width: 80%;
+}
+.social {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+}
+
+.social span{
+    display:inline;
+    font-size:10px;
+}
+
+.social ul {
+    background-image:url("img/social.gif");
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+
+#navigation {
+    clear: right;
+    padding-top: 28px;
+    padding-bottom: 47px;
+}
+
+#navigation li a{
+    margin-left: 20px;
+    color:white;
+}
+#navigation ul {
+	list-style:none;
+}
+
+#sub-navigation {
+    border-top: 1px dashed grey;
+    border-bottom: 1px dashed grey;
+    display: inline;
+    width: 25%;
+    font-size: 16px;
+    font-style: bold;
+    text-decoration: none;
+    clear: right;
+    padding: 8px 0;
+
+}
+
+#sub-navigation ul li {
+    float: left;
+    display: inline;
+    padding-right: 23px;
+}
+
+#sub-navigation ul li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    line-height: 24px;
+    text-decoration: none;
+    display: inline;
+
+}
+
+#search {
+    color:white;
+    font-style: bold;
+
+}
+#main {
+    border-bottom:1px dashed grey;
+}
+
+
+.box {
+    align-items: center;
+    border-bottom: 1px dashed grey;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.box .head {
+	width:980px;
+	padding-top:14px;
+	padding-bottom:11px;
+}
+
+.box .head h2 {
+	float:left;
+	display:inline;
+}
+
+.box .movie {
+	width:152px;
+	float:left;
+	padding-right:12px;
+}
+
+
+.text-right {
+    text-align:right;
+
+}
+
+.movie-image {
+    font-size: 15px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.movie-image img {
+    height:auto;
+    width: 100%;
+}
+
+
+.play{
+    color:white;
+
+}
+
+.name {
+    color:white;
+
+}
+
+.rating {
+    font-style: bold;
+}
+
+.stars {
+    background-image:url("img/stars.gif");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 11px;
+    color:white;
+}
+.stars-in{
+    content:url("img/stars.gif");
+    width: 48px;
+    height: 11px;
+    object-fit: none;
+    object-position: 90% 100%;
+}
+
+.comments{
+    font-size: 7pt;
+    color: white;
+}
+
+#news {
+     align-items: center;
+     display: flex;
+     flex-wrap: wrap;
+     height: auto;
+     margin: 0;
+     padding-right: 3%;
+     width: 47%;
+}
+#news .content {
+    margin-bottom: 25px;
+}
+
+p.date{
+    color:white;
+}
+#news h3, #coming h3 {
+	float:left;
+	display:block;
+}
+
+h4 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color:white;
+}
+
+
+#footer * {
+    display: inline-block;
+    color:white;
+}
+
+.lf {
+    color: white;
+    float: left;
+}
+
+.rf {
+    color: white;
+    float: right;
+}
