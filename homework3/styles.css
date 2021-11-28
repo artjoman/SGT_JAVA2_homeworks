@@ -1,0 +1,422 @@
+body {
+    background-image: url("./img/body-bg.gif");
+    background-repeat: repeat;
+    font-size:12px;
+    font-family:Sans-Serif;
+    color: white;
+  }
+
+ * {
+      margin:0;
+      padding:0;
+      outline:0;
+  }
+
+  .social {
+    float: right;
+    width: 160px;
+    padding-top: 11px;
+  }
+
+  .social span {
+    float: left;
+    display: inline;
+    font-size: 10px;
+    color: #a09999;
+    line-height: 14px;
+    padding-right: 4px;
+  }
+
+  .social ul {
+    list-style:none;
+  }
+
+  .social ul li {
+    float:left;
+    display:inline;
+    width:16px;
+    padding-right:2px;
+  }
+
+  .social ul li a{
+    background-image: url('./img/social.gif');
+    float: left;
+    display: inline;
+    width: 16px;
+    height: 16px;
+    text-indent: -3000px;
+  }
+
+  .social ul li a.facebook {
+    background-position: -18px 0;
+  }
+
+  .social ul li a.vimeo {
+    background-position: -36px 0;
+  }
+
+  .social ul li a.rss {
+    background-position: -54px 0;
+  }
+
+  h1 #logo {
+      position: relative;
+      top: 5%;
+  }
+
+  #logo a  {
+    float: left;
+    color: orange;
+    font-family: Sans-Serif;
+    font-size: 27px;
+    padding-top: 45px;
+
+  }
+
+  #navigation {
+      float: right;
+      padding-top: 28px;
+      padding-bottom: 25px;
+  }
+
+  #navigation ul {
+      list-style:none;
+  }
+
+  #navigation ul li {
+      float: left;
+      display: inline;
+      padding-left: 25px;
+  }
+
+  #navigation ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+  }
+
+  #navigation ul li a:hover {
+      color: red;
+  }
+
+  #sub-navigation {
+      display: block;
+      clear: right;
+      border-top: 1px dashed gray;
+      border-bottom: 1px dashed gray;
+      padding: 8px 0;
+  }
+
+  #sub-navigation ul li {
+      float: left;
+      display: inline;
+      padding-right: 25px;
+  }
+
+  #sub-navigation ul li a {
+      color: white;
+      line-height: 24px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+  #sub-navigation ul li a:hover {
+    color: red;
+  }
+
+  #search {
+      width:346px;
+      margin:0 0 0 auto;
+  }
+
+  #search label {
+      float:left;
+      display:inline;
+      font-size:14px;
+      font-weight:bold;
+      color:white;
+      line-height:24px;
+      padding-right:6px;
+  }
+
+  #search label:hover {
+      color: red;
+  }
+
+  #search .search-field {
+      width:240px;
+      border:2px solid gray;
+      background: black;
+      color:gray;
+      padding:2px 0 2px 2px;
+  }
+
+  #search .search-button {
+      font-size:14px;
+      font-weight:bold;
+      border:0;
+      background:none;
+      color:white;
+  }
+
+  #search .search-button:hover {
+    color: red;
+  }
+
+  #main {
+      border-bottom:1px dashed gray;
+  }
+
+
+  .box {
+      width:980px;
+      border-bottom:1px dashed gray;
+      padding-bottom:21px;
+  }
+
+  .box .head {
+      width:972px;
+      padding-top:15px;
+      padding-bottom:15px;
+  }
+
+  .box .head h2 {
+      float:left;
+      display:inline;
+  }
+
+  .box .movie {
+      width:152px;
+      float:left;
+      padding-right:12px;
+  }
+
+  .movie-image a {
+      float:left;
+      display:inline;
+      position:relative;
+      z-index:2;
+      width:152px;
+      height:214px;
+
+  }
+
+  .play {
+    position:relative;
+    top:0;
+    left:0;
+    width:152px;
+    height:214px;
+    display:block;
+    z-index:5;
+    display:none;
+  }
+  #cl {
+    background-image: url('./img/image-hover.png');
+  }
+
+  .movie:hover {
+    opacity: 0.3;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+  }
+
+  .movie span.name {
+      font-weight:bold;
+      color:white;
+      font-size:14px;
+      text-align:center;
+      padding-top:160px;
+      display:block;
+  }
+
+  .box .last {
+      padding:0;
+  }
+
+  .rating {
+      float:left;
+      width:152px;
+      padding-top:8px;
+  }
+
+  .rating p {
+      float:left;
+      font-size:10px;
+      color:white;
+      font-weight:bold;
+  }
+
+  .rating .stars {
+      float:left;
+      width:60px;
+      height:11px;
+      background:url('./img/stars.gif') no-repeat 0 0;
+      margin-left:2px;
+  }
+
+  .rating .stars-in {
+      width:48px;
+      display:inline;
+      background:url('./img/stars.gif') no-repeat 0 bottom;
+      position:absolute;
+      height:11px;
+      font-size:0;
+      line-height:0;
+      text-indent:-4000px;
+  }
+
+  .comments {
+      background:url('./img/comments.gif') no-repeat 0 center;
+      padding-left:12px;
+      float:right;
+  }
+
+  #news {
+      width:460px;
+      float:left;
+  }
+
+  #news .head {
+      width:460px;
+      padding-top:11px;
+      padding-bottom:14px;
+  }
+
+  #news h3, #coming h3 {
+      float:left;
+  }
+
+  #coming {
+      width:490px;
+      float:left;
+      padding-left:30px;
+  }
+
+  #coming .head {
+      width:490px;
+      padding-top:11px;
+      padding-bottom:14px;
+  }
+
+  #coming .head strong {
+      color: red;
+  }
+
+  #coming .content {
+      min-height:130px;
+      height:auto !important;
+      height:130px;
+      padding-bottom:20px;
+  }
+  #coming .content h4 {
+      padding-bottom:3px;
+  }
+  .content {
+      padding-bottom:28px;
+  }
+  .content .date {
+      font-size:10px;
+      color:white;
+  }
+  .content img {
+      float:left;
+      width:68px;
+      padding-right:8px;
+  }
+  .content p {
+      font-size:13px;
+      color:white;
+      line-height:16px;
+  }
+  .content a {
+      font-size:11px;
+  }
+
+a img {
+	border:0;
+}
+input, textarea, select {
+	font-size:12px;
+	font-family:Sans-Serif;
+}
+textarea {
+	overflow:auto;
+}
+.cl {
+	display:block;
+	height:0;
+	font-size:0;
+	line-height:0;
+	text-indent:-4000px;
+	clear:both;
+}
+.notext {
+	font-size:0;
+	line-height:0;
+	text-indent:-4000px;
+}
+.left, .alignleft {
+	float:left;
+	display:inline;
+}
+.right, .alignright {
+	float:right;
+	display:inline;
+}
+.text-right {
+	text-align:right;
+}
+h2 {
+	font-size:10px;
+	color:orange;
+	font-weight:bold;
+}
+h3 {
+	font-size:14px;
+	color:white;
+	font-weight:bold;
+}
+h4 {
+	font-size:14px;
+	color:orange;
+	font-weight:bold;
+}
+#shell {
+	width:980px;
+	margin:0 auto;
+}
+
+#header {
+	position:relative;
+}
+
+a {
+	color:orange;
+}
+#footer {
+	padding:15px 0 0 0;
+	font-size:10px;
+}
+#footer, #footer a {
+	color:gray;
+	text-decoration:none;
+}
+#footer a:hover {
+	text-decoration:none;
+}
+#footer p {
+	margin:0;
+	padding:0 0 11px 0;
+	line-height:normal;
+	white-space:nowrap;
+}
+.lf {
+	float:left;
+}
+.rf {
+	float:right;
+}
