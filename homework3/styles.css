@@ -1,0 +1,177 @@
+* {
+    background-image: url("img/body-bg.gif");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    width: 300px;
+}
+
+body {
+    max-width: 960px;
+    margin: auto;  
+}
+
+a {
+    color: #F3B12B;
+}
+
+a:hover {
+    color: #D91D2A;
+}
+
+h2 {
+    color:#F3B12B;
+    font-size: 10px;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: #F3B12B;
+}
+
+p {
+    color: white;
+}
+
+strong {
+    color: #D91D2A;
+}
+
+#search {
+    color: white;
+    text-align: right;
+}
+
+ul li {
+    display: inline;
+    padding: 8px;
+  }
+
+li a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.social {
+    color: gray;
+    text-align: right;
+}
+
+.social span {
+    font-size: 10px;
+}
+
+.social ul {
+    content: url("img/social.gif");
+    float: right;
+}
+
+input {
+    color: gray;
+}
+
+#navigation {
+    text-align: right;
+    font-size: 15px;
+}
+
+#sub-navigation {
+    font-size: 15px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+
+#sub-navigation ul {
+    text-align: left;
+}
+
+.box {
+    border-bottom: 1px dashed gray;
+}
+
+.rating p {
+    font-size: 10px;
+    float: left;
+}
+
+.movie {
+    display: inline-block;
+    padding: 7px;
+}
+
+.name {
+    visibility: hidden;
+    font-size: 0;
+}
+
+.movie-image:hover {
+    background: url("img/image-hover.png");
+}
+
+.text-right {
+    text-align: right;
+    font-size: 12px;
+}
+
+.comments {
+    color: gray;
+    font-size: 11px;
+    float: right;
+    margin-top: 7px;
+}
+
+#news {
+    width: 50%;
+    float: left;
+}
+
+#coming {
+    width: 50%;
+    float: right;
+}
+
+#footer {
+    margin-top: 10px;
+    border-top: 1px dashed gray;
+    font-size: 10px;
+}
+
+#footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+.lf {
+    float: left;
+    color: gray;
+}
+
+.rf {
+    float: right;
+    color: gray;
+}
+
+.movie-image {
+    width: 140px;
+}
+
+div.stars-in {
+    content: url("img/stars.gif");
+    float: left;
+}
+
+.date {
+    font-size: 10px;
+}
+
+.content p {
+    font-size: 14px;
+}
+
+.content a {
+    font-size: 12px;
+}
