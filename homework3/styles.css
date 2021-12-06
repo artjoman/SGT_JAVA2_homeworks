@@ -1,0 +1,341 @@
+/* CSS for all html file */
+body {
+    background-image: url("./img/body-bg.gif");
+    font-family:Tahoma, Verdana, sans-serif;
+    color: #f1f1f1;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    }
+
+ #shell{
+    margin:auto;
+    width: 70%; 
+   
+}
+
+/* CSS for all links */
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(207, 6, 6);
+}
+
+#logo  a{
+    color: rgba(231, 176, 56);
+    text-decoration: underline;
+}
+
+#logo{
+    font-size: 30px;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+/* CSS to all header */
+#header {
+    position: relative;          /*  after choosing position you can select top, bottom, right, left*/
+    width: 90%;
+    display:flex;               /*  elements in one row */
+    flex-wrap: wrap;  
+    padding-top: 20px; 
+    margin: auto; 
+    padding-bottom: 10px;
+   }
+   
+   #header li{
+      list-style: none; 
+      display: inline;
+      flex-wrap: nowrap;
+   }
+
+.social{
+    color: rgba(159, 159, 159);
+    font-size: 11px;
+    font-weight: normal;
+    display: flex;              
+    flex-wrap: wrap; 
+    position: absolute;
+    top: 10px;
+    right: 90px;  
+}
+
+.social ul{
+    background-image:url("img/social.gif");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: -12px;
+    right: -80px;
+}
+
+#navigation{
+    font-size: 17px;
+    font-weight: bold;
+    margin: auto;
+    position: relative;
+    right: -70px;
+}
+
+#navigation li{
+    text-align: right;
+    margin-right: 35px; 
+}
+
+#sub-navigation {
+    border-top-style:dashed;
+    border-bottom-style: dashed;
+    border-width:thin;
+    border-color: rgba(159, 159, 159);
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+ 
+}
+
+#sub-navigation li{
+    position: relative;
+    margin-right: 32px;
+    left: -35px;
+    
+}
+
+#search{   
+    border: none;
+    margin: auto;
+    position: relative;
+    right: -90px; 
+ }
+
+ #search-field{
+     background-color: black;
+     color:rgba(159, 159, 159);
+     border-color: rgba(159, 159, 159);
+     height: 17px;
+     width: 250px; 
+     font-family: inherit; 
+ }
+
+ .search-button{
+     border: none;
+     background-color: inherit;
+     cursor: pointer;
+     display: inline-block;
+     color: #f1f1f1;
+     font-weight: bold;
+     font-size: 17px;
+ }
+
+/* CSS for main part */
+
+#id{
+    position: relative;
+    margin:auto;
+    width: auto;
+}
+
+#content{
+    position: relative;
+    top:-15px;
+    left: 50px;
+}
+ .box {
+     align-items: center;
+     border-bottom-style: dashed;
+     border-width:thin;
+     border-color: rgba(159, 159, 159);
+     display: flex;
+     flex-wrap: wrap;
+     height: auto;
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-right: 110px;
+     margin-bottom: -5px;
+     
+ }
+
+/* LATEST TRAILERS and SEE ALL */
+.head h2, .head a {
+    display: inline-block;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: rgb(219, 158, 44);
+}
+
+/* SEE ALL */
+.head a{
+    text-decoration: underline;
+    position: relative;
+    right: -1140px;
+    top: -50px;
+    font-size: 14px;
+    }
+   .head h2{
+       position: relative;
+       top:-10px;
+   }
+ .head {
+     display: inline;
+     position: relative;
+     height: 40px;
+     width: 100%;   
+ }
+ 
+ .movie {
+     padding-right: 31px;
+     position: relative;
+     left:20px;
+     width:14%;
+     opacity: 1;
+ }
+ .movie img:hover{
+    height: 100%;
+    display:inline-flex;
+    padding: auto;
+    opacity: 0.5; 
+ }
+
+ .name{
+     visibility: hidden;
+ }
+
+ .rating {
+     font-weight: bold;
+     align-items: center;
+     display: flex;
+     flex-wrap: wrap;
+     height: auto;
+     padding: 0;
+     width: 100%;
+ }
+ 
+ .stars {
+     background-image:url("img/stars.gif");
+     background-repeat: no-repeat;
+     width: 100px;
+     height: 11px;
+     position: relative;
+     left:7px;
+     color: #f1f1f1;
+ }
+ .stars-in{
+     content:url("img/stars.gif");
+     height: 11px;
+     width: 48px;
+     object-fit: none;
+     object-position: 90% 100%;
+ }
+ .rating{
+    color: #f1f1f1;
+     margin-right: 10px;
+     font-size: 8pt;
+ }
+
+ .comments{
+     color: rgba(159, 159, 159);
+     font-size: 10pt;
+     position: relative;
+     right: 6px;
+     font-weight: normal; 
+ }
+
+ /* NEWS and COMING SOON */
+
+ #news, #coming{
+    display:table-cell;
+    position: relative;  
+  }
+  
+  #news{
+      width: 550px;
+      padding-left: 70px;
+      height:300px;
+  }
+
+  #coming{
+    padding-left: 90px;
+    width:550px;
+    height: 300px;
+  }
+
+ .head h3{
+     font-size: 15px;
+    font-weight: bold;
+ }
+
+ .head strong{
+    color:rgb(207, 6, 6);
+ }
+  
+  /*CSS for TEXT */
+ 
+  .content{
+    position: relative;
+    top: -40px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .content h4{
+    color: rgba(231, 176, 56);
+    position: relative;
+    top:10px;
+    font-weight: bold;
+    font-size: 16px; 
+  }
+ 
+  .date {
+    font-size: 11px;
+    font-weight: bold;
+    position: relative;
+    top: 18px; 
+  }
+ 
+  .content img{
+    float:left;
+    margin: 8px;
+    padding-top: -10px;
+  }
+
+  .content a{
+    text-decoration: underline;
+    color: rgba(231, 176, 56);
+    font-size: 14px;
+  }
+  
+/* CSS for footer */
+#footer {
+     border-top-style: dashed;
+     border-width:thin;
+     border-color: rgba(159, 159, 159);
+    font-size: 11px;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+#footer * {
+    display: inline-block;
+}
+
+#footer a{
+    text-decoration: none;
+    color: rgba(159, 159, 159);
+}
+
+#footer p{
+    color: rgba(159, 159, 159);
+}
+.rf{
+    float:right;
+}
+
+
